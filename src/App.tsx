@@ -1,9 +1,13 @@
 import { useState } from 'react'
+import { Button } from './components/Button'
 
 export function App() {
   return (
-    <div className="App">
-      AAAA
-    </div>
+    <>
+      <Button variant='primary' />
+      <Button variant='secondary' />
+      <Button variant='danger' />
+      <Button variant='success' />
+    </>
   )
 }

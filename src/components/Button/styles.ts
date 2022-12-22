@@ -16,9 +16,12 @@ const buttonVariants = {
 export const ButtonContainer = styled.button<IButtonContainer>`
   width: 100px;
   height: 40px;
-  ${(props) => {
+
+  background-color: ${(props) => props.theme.danger};
+
+  /* ${(props) => {
     return css`
       background-color: ${buttonVariants[props.variant]};
     `;
-  }}
+  }} */
 `;
